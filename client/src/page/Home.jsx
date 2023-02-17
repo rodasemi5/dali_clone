@@ -40,7 +40,7 @@ const Home = () => {
         if(response.ok){
           const result = await response.json();
 
-          setAllPost(result.data.reverse());
+          setAllPosts(result.data.reverse());
         }
       } catch (error) {
         alert(error)
